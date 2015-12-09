@@ -13,8 +13,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    pole.cpp \
+    kwadrat.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    pole.h \
+    kwadrat.h
 
 FORMS    += mainwindow.ui

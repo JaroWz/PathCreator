@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "pole.h"
 
 namespace Ui {
 class MainWindow;
@@ -15,8 +16,14 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+
 private:
     Ui::MainWindow *ui;
+
+    pole *p;
+
+
 };
 
 #endif // MAINWINDOW_H

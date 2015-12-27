@@ -13,6 +13,7 @@ class pole : public QWidget
     Q_OBJECT
 public:
     explicit pole(QWidget *parent = 0);
+
     bool game_status;
     bool move_status;
     bool game_pause;

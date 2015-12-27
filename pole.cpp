@@ -6,14 +6,14 @@ pole::pole(QWidget *parent) : QWidget(parent)
 
 
             g=new kwadrat;
-            g->size=20;
+            g->size=10;
 
             game_status=false;
             move_status=false;
             game_pause=false;
 
-            this->setMaximumHeight(401);
-            this->setMaximumWidth(401);
+            this->setMaximumHeight(201);
+            this->setMaximumWidth(201);
 
             this->igrek= this->maximumHeight()/g->size;
             this->iks= this->maximumWidth()/g->size;
@@ -35,6 +35,7 @@ pole::pole(QWidget *parent) : QWidget(parent)
 
        }
 
+
 void pole::mousePressEvent(QMouseEvent *event)
 {
     //generate_obstacle();
@@ -44,7 +45,7 @@ void pole::mousePressEvent(QMouseEvent *event)
                this->currentY=event->pos().y();
     if(event->buttons() & Qt::LeftButton){this->isClickedLeft=1;}//
     if(event->buttons() & Qt::RightButton){ this->isClickedRight=1;}
-}
+    }
     }
 
 
